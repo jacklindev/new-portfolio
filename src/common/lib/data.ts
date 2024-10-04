@@ -2,16 +2,15 @@ import React from 'react';
 
 import campwithusImg from '@/../public/images/camp-with-us.png';
 import carcatalogImg from '@/../public/images/car-catalog.png';
-import filedriveImg from '@/../public/images/file-drive.png';
+import pypestreamImg from '@/../public/images/pypestream.webp';
 import projectmanagementImg from '@/../public/images/project-management.png';
 import reactfoodImg from '@/../public/images/react-food.png';
 import surgeImg from '@/../public/images/surge.png';
-import portfolioImg from '@/../public/images/portfolio.png';
+import spinsciImg from '@/../public/images/spinsci.webp';
 import auditMasterImg from '@/../public/images/audit-master.png';
 import {
   BookIcon,
   BriefcaseBusinessIcon,
-  LaptopMinimalIcon,
 } from 'lucide-react';
 
 export const links = [
@@ -82,42 +81,47 @@ export const experiencesData = [
 export const images = {
   campwithusImg,
   carcatalogImg,
-  filedriveImg,
+  pypestreamImg,
   projectmanagementImg,
   reactfoodImg,
 };
 
 export const projectsData = [
   {
-    title: 'FileDrive',
+    title: 'AI chatbots & Microapps',
     description:
-      'A platform for decentralized file storage with robust user management.',
+      'Deliver a seamless, app-like experience with the convenience of a self-service conversation that drives adoption and delights customers',
     tags: [
       'React',
       'TypeScript',
       'Next.js',
-      'Convex',
-      'Clerk',
-      'Shadcn',
-      'Tailwind',
+      'XState',
+      'RxJS',
+      'React-Flow',
+      'GraphQL',
+      'Datadog',
+      'Cypress',
+      'i18n',
     ],
-    imageUrl: filedriveImg,
-    link: 'https://github.com/bbyc4kes/file-drive',
+    imageUrl: pypestreamImg,
+    link: '',
   },
   {
-    title: 'Portfolio',
-    description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
+    title: 'Patient Engagement Software',
+    description: `A Healthcare platform that enables a Total Care Experience for connected and compassionate care across the full patient journey`,
     tags: [
       'React',
+      'Redux',
       'TypeScript',
-      'Next.js',
-      'Framer Motion',
-      'Cloudinary',
-      'React Email',
-      'Tailwind',
+      'Formik',
+      'Jest',
+      'Cypress',
+      'Mirth Connect',
+      'HL7 Standards',
+      'AWS',
     ],
-    imageUrl: portfolioImg,
-    link: 'https://github.com/bbyc4kes/portfolio',
+    imageUrl: spinsciImg,
+    link: '',
   },
   {
     title: 'Audit Master',
@@ -132,7 +136,7 @@ export const projectsData = [
       'End-to-End Development',
     ],
     imageUrl: auditMasterImg,
-    link: 'https://auditmaster.ai/',
+    link: '',
   },
   {
     title: 'Surge',
@@ -149,7 +153,7 @@ export const projectsData = [
       'Tailwind',
     ],
     imageUrl: surgeImg,
-    link: 'https://github.com/bbyc4kes/surge',
+    link: '',
   },
   {
     title: 'CampWithUs',
@@ -157,7 +161,7 @@ export const projectsData = [
       'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
     tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
     imageUrl: campwithusImg,
-    link: 'https://github.com/bbyc4kes/campwithus',
+    link: '',
   },
 ] as const;
 
