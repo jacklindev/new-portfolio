@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 import ActiveSectionContextProvider from '@/common/stores/active-section';
 import { ThemeProvider } from '@/common/theme/theme-provider';
 import Header from '@/common/components/shared/header';
-import Footer from '@/common/components/shared/footer';
+// import Footer from '@/common/components/shared/footer';
 import { ModeToggle } from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default function RootLayout({
             >
               <Header />
               {children}
-              <Footer />
+              {/* <Footer /> */}
               <div className="fixed left-1 right-auto top-1 z-[99] sm:bottom-6 sm:left-6 sm:top-auto">
                 <ModeToggle />
               </div>
