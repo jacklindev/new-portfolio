@@ -8,10 +8,7 @@ import reactfoodImg from '@/../public/images/react-food.png';
 import surgeImg from '@/../public/images/surge.png';
 import spinsciImg from '@/../public/images/spinsci.webp';
 import auditMasterImg from '@/../public/images/audit-master.png';
-import {
-  BookIcon,
-  BriefcaseBusinessIcon,
-} from 'lucide-react';
+import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
   {
@@ -165,46 +162,56 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  ['JavaScript', '/svgs/javascript-js.svg'],
-  ['TypeScript', '/svgs/typescript-icon.svg'],
-  ['React', '/svgs/react.svg'],
-  ['React Native', '/svgs/react.svg'],
-  ['Next.js', '/svgs/nextjs.svg'],
-  ['Redux', '/svgs/redux-original.svg'],
-  ['Node.js', '/svgs/node-js.svg'],
-  ['Express', '/svgs/express-original.svg'],
-  ['Python', '/images/python.png'],
-  ['Django', '/images/python.png'],
-  ['Flask', '/images/flask.png'],
-  ['RabbitMQ', '/svgs/rabbitmq.svg'],
-  ['Tornado', '/svgs/tornado.svg'],
-  ['Pyramid', '/svgs/pyramid.svg'],
-  ['Tailwind', '/svgs/tailwind-css.svg'],
-  ['Framer', '/svgs/framer.svg'],
-  ['Headless', '/svgs/brand-headlessui.svg'],
-  ['Prisma', '/svgs/file-type-light-prisma.svg'],
-  ['GraphQL', '/svgs/graphql.svg'],
-  ['MongoDB', '/svgs/mongoDB.svg'],
-  ['PostgreSQL', '/svgs/postgresql.svg'],
-  ['MySQL', '/svgs/MySQL.svg'],
-  ['Cloudinary', '/svgs/cloudinary.svg'],
-  ['Docker', '/svgs/Docker.svg'],
-  ['Axios', '/svgs/axios.svg'],
-  ['HTML', '/svgs/file-type-html.svg'],
-  ['CSS', '/svgs/file-type-css.svg'],
-  ['Sass', '/svgs/Sass.svg'],
-  ['Git', '/svgs/git.svg'],
-  ['GitHub', '/svgs/github.svg'],
-  ['Datadog', '/svgs/datadog.svg'],
-  ['SonarQube', '/images/sonarqube.png'],
-  ['Sentry', '/images/sentry.png'],
-  ['Jest', '/images/jest.png'],
-  ['Mocha', '/images/mocha.png'],
-  ['Chai', '/images/chai.png'],
-  ['Cypress', '/svgs/cypress.svg'],
-  ['Playwright', '/svgs/playwright.svg'],
-  ['Karma', '/images/karma.png'],
-  ['Firebase', '/images/firebase.png'],
-  ['', '/svgs/etc.svg'],
-] as const;
+export const skillsData = {
+  Languages: [
+    ['HTML', '/svgs/file-type-html.svg'],
+    ['CSS', '/svgs/file-type-css.svg'],
+    ['Sass', '/svgs/Sass.svg'],
+    ['JavaScript', '/svgs/javascript-js.svg'],
+    ['TypeScript', '/svgs/typescript-icon.svg'],
+  ],
+  'Front-end': [
+    ['React', '/svgs/react.svg'],
+    ['React Native', '/svgs/react.svg'],
+    ['Next.js', '/svgs/nextjs.svg'],
+    ['Redux', '/svgs/redux-original.svg'],
+    ['Tailwind', '/svgs/tailwind-css.svg'],
+    ['Framer', '/svgs/framer.svg'],
+    ['Headless', '/svgs/brand-headlessui.svg'],
+    ['Axios', '/svgs/axios.svg'],
+  ],
+  'Back-end': [
+    ['Node.js', '/svgs/node-js.svg'],
+    ['Express', '/svgs/express-original.svg'],
+    ['Python', '/images/python.png'],
+    ['Django', '/images/python.png'],
+    ['Flask', '/images/flask.png'],
+    ['GraphQL', '/svgs/graphql.svg'],
+    ['Firebase', '/images/firebase.png'],
+    ['Docker', '/svgs/Docker.svg'],
+    ['RabbitMQ', '/svgs/rabbitmq.svg'],
+    ['Tornado', '/svgs/tornado.svg'],
+    ['Pyramid', '/svgs/pyramid.svg'],
+    ['Prisma', '/svgs/file-type-light-prisma.svg'],
+  ],
+  Database: [
+    ['MongoDB', '/svgs/mongoDB.svg'],
+    ['PostgreSQL', '/svgs/postgresql.svg'],
+    ['MySQL', '/svgs/MySQL.svg'],
+  ],
+  TDD: [
+    ['Jest', '/images/jest.png'],
+    ['Mocha', '/images/mocha.png'],
+    ['Chai', '/images/chai.png'],
+    ['Cypress', '/svgs/cypress.svg'],
+    ['Playwright', '/svgs/playwright.svg'],
+    ['Karma', '/images/karma.png'],
+  ],
+  'Debugging & Monitoring': [
+    ['Git', '/svgs/git.svg'],
+    ['GitHub', '/svgs/github.svg'],
+    ['Datadog', '/svgs/datadog.svg'],
+    ['SonarQube', '/images/sonarqube.png'],
+    ['Sentry', '/images/sentry.png'],
+  ],
+} as const;
