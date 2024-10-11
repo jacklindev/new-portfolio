@@ -24,7 +24,7 @@ export default function TextAnimation({
       <motion.span
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
-        className="mb-10 text-start text-[28px] lg:text-[2rem]"
+        className="mb-10 text-start text-[36px] lg:text-[2rem]"
       >
         Full Stack Developer - React, Node.js, Python
       </motion.span>

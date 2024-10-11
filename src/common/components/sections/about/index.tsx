@@ -44,14 +44,10 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  {`A results-oriented Full Stack Developer with 12 years of hands-on experience delivering high-performance web applications. My
-                    background includes extensive experience collaborating with cross-functional teams and stakeholders to ensure seamless project
-                    delivery from concept to deployment. I bring a balanced approach to development, focusing on both the technical architecture
-                    and end-user experience.`}
+                  {`Accomplished Full Stack Engineer with 12 years of experience in developing scalable, high-performance applications using React, Python, and NodeJS.`}
                 </span>
                 <span>
-                  {`With a strong foundation in agile practices, I have consistently driven successful project outcomes while adapting to shifting
-                    priorities and client needs. My experience working as a freelancer has further refined my ability to manage projects independently,
+                  {`My experience working as a freelancer has further refined my ability to manage projects independently,
                     meet tight deadlines, and maintain clear communication with clients to ensure project goals are met efficiently and effectively.`}
                 </span>
                 <p className="flex flex-col items-start sm:items-center lg:items-start">

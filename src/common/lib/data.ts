@@ -8,10 +8,7 @@ import reactfoodImg from '@/../public/images/react-food.png';
 import surgeImg from '@/../public/images/surge.png';
 import spinsciImg from '@/../public/images/spinsci.webp';
 import auditMasterImg from '@/../public/images/audit-master.png';
-import {
-  BookIcon,
-  BriefcaseBusinessIcon,
-} from 'lucide-react';
+import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
   {
@@ -86,125 +83,160 @@ export const images = {
   reactfoodImg,
 };
 
-export const projectsData = [
-  {
-    title: 'AI chatbots & Microapps',
-    description:
-      'Deliver a seamless, app-like experience with the convenience of a self-service conversation that drives adoption and delights customers',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'XState',
-      'RxJS',
-      'React-Flow',
-      'GraphQL',
-      'Datadog',
-      'Cypress',
-      'i18n',
-    ],
-    imageUrl: pypestreamImg,
-    link: '',
-  },
-  {
-    title: 'Patient Engagement Software',
-    description: `A Healthcare platform that enables a Total Care Experience for connected and compassionate care across the full patient journey`,
-    tags: [
-      'React',
-      'Redux',
-      'TypeScript',
-      'Formik',
-      'Jest',
-      'Cypress',
-      'Mirth Connect',
-      'HL7 Standards',
-      'AWS',
-    ],
-    imageUrl: spinsciImg,
-    link: '',
-  },
-  {
-    title: 'Audit Master',
-    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind',
-      'OpenAI',
-      'SCRUM Methodology',
-      'End-to-End Development',
-    ],
-    imageUrl: auditMasterImg,
-    link: '',
-  },
-  {
-    title: 'Surge',
-    description:
-      'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'MySQL',
-      'Clerk',
-      'Stripe Connect',
-      'Shadcn',
-      'Tailwind',
-    ],
-    imageUrl: surgeImg,
-    link: '',
-  },
-  {
-    title: 'CampWithUs',
-    description:
-      'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
-    tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
-    imageUrl: campwithusImg,
-    link: '',
-  },
-] as const;
+export const allProjects = {
+  'React.js': [
+    {
+      title: 'AI chatbots & Microapps',
+      description:
+        'Deliver a seamless, app-like experience with the convenience of a self-service conversation that drives adoption and delights customers',
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'XState',
+        'RxJS',
+        'React-Flow',
+        'GraphQL',
+        'Datadog',
+        'Cypress',
+        'i18n',
+      ],
+      imageUrl: pypestreamImg,
+      link: '',
+    },
+    {
+      title: 'Patient Engagement Software',
+      description: `A Healthcare platform that enables a Total Care Experience for connected and compassionate care across the full patient journey`,
+      tags: [
+        'React',
+        'Redux',
+        'TypeScript',
+        'Formik',
+        'Jest',
+        'Cypress',
+        'Mirth Connect',
+        'HL7 Standards',
+        'AWS',
+      ],
+      imageUrl: spinsciImg,
+      link: '',
+    },
+    {
+      title: 'Audit Master',
+      description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'Tailwind',
+        'OpenAI',
+        'SCRUM Methodology',
+        'End-to-End Development',
+      ],
+      imageUrl: auditMasterImg,
+      link: '',
+    },
+    {
+      title: 'Surge',
+      description:
+        'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'MySQL',
+        'Clerk',
+        'Stripe Connect',
+        'Shadcn',
+        'Tailwind',
+      ],
+      imageUrl: surgeImg,
+      link: '',
+    },
+  ],
+  'Node.js': [
+    {
+      title: 'CampWithUs',
+      description:
+        'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
+      tags: ['Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
+      imageUrl: campwithusImg,
+      link: '',
+    },
+  ],
+  Python: [
+    {
+      title: 'AI chatbots & Microapps',
+      description:
+        'Deliver a seamless, app-like experience with the convenience of a self-service conversation that drives adoption and delights customers',
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'XState',
+        'RxJS',
+        'React-Flow',
+        'GraphQL',
+        'Datadog',
+        'Cypress',
+        'i18n',
+      ],
+      imageUrl: pypestreamImg,
+      link: '',
+    },
+  ],
+};
 
-export const skillsData = [
-  ['JavaScript', '/svgs/javascript-js.svg'],
-  ['TypeScript', '/svgs/typescript-icon.svg'],
-  ['React', '/svgs/react.svg'],
-  ['React Native', '/svgs/react.svg'],
-  ['Next.js', '/svgs/nextjs.svg'],
-  ['Redux', '/svgs/redux-original.svg'],
-  ['Node.js', '/svgs/node-js.svg'],
-  ['Express', '/svgs/express-original.svg'],
-  ['Python', '/images/python.png'],
-  ['Django', '/images/python.png'],
-  ['Flask', '/images/flask.png'],
-  ['RabbitMQ', '/svgs/rabbitmq.svg'],
-  ['Tornado', '/svgs/tornado.svg'],
-  ['Pyramid', '/svgs/pyramid.svg'],
-  ['Tailwind', '/svgs/tailwind-css.svg'],
-  ['Framer', '/svgs/framer.svg'],
-  ['Headless', '/svgs/brand-headlessui.svg'],
-  ['Prisma', '/svgs/file-type-light-prisma.svg'],
-  ['GraphQL', '/svgs/graphql.svg'],
-  ['MongoDB', '/svgs/mongoDB.svg'],
-  ['PostgreSQL', '/svgs/postgresql.svg'],
-  ['MySQL', '/svgs/MySQL.svg'],
-  ['Cloudinary', '/svgs/cloudinary.svg'],
-  ['Docker', '/svgs/Docker.svg'],
-  ['Axios', '/svgs/axios.svg'],
-  ['HTML', '/svgs/file-type-html.svg'],
-  ['CSS', '/svgs/file-type-css.svg'],
-  ['Sass', '/svgs/Sass.svg'],
-  ['Git', '/svgs/git.svg'],
-  ['GitHub', '/svgs/github.svg'],
-  ['Datadog', '/svgs/datadog.svg'],
-  ['SonarQube', '/images/sonarqube.png'],
-  ['Sentry', '/images/sentry.png'],
-  ['Jest', '/images/jest.png'],
-  ['Mocha', '/images/mocha.png'],
-  ['Chai', '/images/chai.png'],
-  ['Cypress', '/svgs/cypress.svg'],
-  ['Playwright', '/svgs/playwright.svg'],
-  ['Karma', '/images/karma.png'],
-  ['Firebase', '/images/firebase.png'],
-  ['', '/svgs/etc.svg'],
-] as const;
+export const skillsData = {
+  Languages: [
+    ['HTML', '/svgs/file-type-html.svg'],
+    ['CSS', '/svgs/file-type-css.svg'],
+    ['Sass', '/svgs/Sass.svg'],
+    ['JavaScript', '/svgs/javascript-js.svg'],
+    ['TypeScript', '/svgs/typescript-icon.svg'],
+  ],
+  'Front-end': [
+    ['React', '/svgs/react.svg'],
+    ['React Native', '/svgs/react.svg'],
+    ['Next.js', '/svgs/nextjs.svg'],
+    ['Redux', '/svgs/redux-original.svg'],
+    ['Tailwind', '/svgs/tailwind-css.svg'],
+    ['Framer', '/svgs/framer.svg'],
+    ['Headless', '/svgs/brand-headlessui.svg'],
+    ['Axios', '/svgs/axios.svg'],
+  ],
+  'Back-end': [
+    ['Node.js', '/svgs/node-js.svg'],
+    ['Express', '/svgs/express-original.svg'],
+    ['Python', '/images/python.png'],
+    ['Django', '/images/python.png'],
+    ['Flask', '/images/flask.png'],
+    ['GraphQL', '/svgs/graphql.svg'],
+    ['Firebase', '/images/firebase.png'],
+    ['Docker', '/svgs/Docker.svg'],
+    ['RabbitMQ', '/svgs/rabbitmq.svg'],
+    ['Tornado', '/svgs/tornado.svg'],
+    ['Pyramid', '/svgs/pyramid.svg'],
+    ['Prisma', '/svgs/file-type-light-prisma.svg'],
+  ],
+  Database: [
+    ['MongoDB', '/svgs/mongoDB.svg'],
+    ['PostgreSQL', '/svgs/postgresql.svg'],
+    ['MySQL', '/svgs/MySQL.svg'],
+  ],
+  TDD: [
+    ['Jest', '/images/jest.png'],
+    ['Mocha', '/images/mocha.png'],
+    ['Chai', '/images/chai.png'],
+    ['Cypress', '/svgs/cypress.svg'],
+    ['Playwright', '/svgs/playwright.svg'],
+    ['Karma', '/images/karma.png'],
+  ],
+  'Debugging & Monitoring': [
+    ['Git', '/svgs/git.svg'],
+    ['GitHub', '/svgs/github.svg'],
+    ['Datadog', '/svgs/datadog.svg'],
+    ['SonarQube', '/images/sonarqube.png'],
+    ['Sentry', '/images/sentry.png'],
+  ],
+} as const;

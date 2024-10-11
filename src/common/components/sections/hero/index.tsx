@@ -23,33 +23,15 @@ export default function Hero() {
       >
         <div
           className={
-            "absolute left-0 top-0 h-screen w-full dark:bg-[#0000007c]"
+            "absolute left-0 top-0 h-screen w-full dark:bg-[#0000007c] bg-no-repeat bg-cover bg-center"
           }
+          style={{ backgroundImage: "url(/images/background.jpg)"}}
         ></div>
-        <video
-          width="480"
-          height="720"
-          preload="none"
-          autoPlay
-          crossOrigin="anonymous"
-          muted
-          loop
-          className="absolute -z-10 h-screen w-screen object-cover"
-        >
-          <source src="/layout.mp4" />
-        </video>
+        <div className="absolute left-0 top-0 h-screen w-full bg-[#242a35] opacity-80"></div>
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
-            <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
-              <motion.span
-                initial={{ y: -100, x: "-50%", opacity: 0 }}
-                animate={{ y: 0, x: "-50%", opacity: 1 }}
-                className="mb-10 text-start font-extrabold"
-              >
-                Hey!
-              </motion.span>
-              <br />
-              <TextAnimation delay={1} baseText={`I'm Kevin`} />
+            <div className="h-48 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
+              <TextAnimation delay={1} baseText={`Kevin Wathen`} />
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
