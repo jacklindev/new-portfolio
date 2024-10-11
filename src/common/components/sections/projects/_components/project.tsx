@@ -1,12 +1,9 @@
 'use client';
 
 import { useRef } from 'react';
-import { projectsData } from '@/common/lib/data';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-
-type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
@@ -14,7 +11,7 @@ export default function Project({
   tags,
   imageUrl,
   link,
-}: ProjectProps) {
+}: any) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -42,7 +39,7 @@ export default function Project({
             <h3 className="text-2xl font-semibold uppercase"> {title}</h3>
             <p className="mt-2 leading-relaxed">{description}</p>
             <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
+              {tags.map((tag: any, index: number) => (
                 <li
                   className="rounded-full bg-[#ffcbb4] px-3 py-1 text-[0.7rem] uppercase tracking-wider dark:bg-[#ddbea9] dark:text-black"
                   key={index}
