@@ -83,84 +83,109 @@ export const images = {
   reactfoodImg,
 };
 
-export const projectsData = [
-  {
-    title: 'AI chatbots & Microapps',
-    description:
-      'Deliver a seamless, app-like experience with the convenience of a self-service conversation that drives adoption and delights customers',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'XState',
-      'RxJS',
-      'React-Flow',
-      'GraphQL',
-      'Datadog',
-      'Cypress',
-      'i18n',
-    ],
-    imageUrl: pypestreamImg,
-    link: '',
-  },
-  {
-    title: 'Patient Engagement Software',
-    description: `A Healthcare platform that enables a Total Care Experience for connected and compassionate care across the full patient journey`,
-    tags: [
-      'React',
-      'Redux',
-      'TypeScript',
-      'Formik',
-      'Jest',
-      'Cypress',
-      'Mirth Connect',
-      'HL7 Standards',
-      'AWS',
-    ],
-    imageUrl: spinsciImg,
-    link: '',
-  },
-  {
-    title: 'Audit Master',
-    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind',
-      'OpenAI',
-      'SCRUM Methodology',
-      'End-to-End Development',
-    ],
-    imageUrl: auditMasterImg,
-    link: '',
-  },
-  {
-    title: 'Surge',
-    description:
-      'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'MySQL',
-      'Clerk',
-      'Stripe Connect',
-      'Shadcn',
-      'Tailwind',
-    ],
-    imageUrl: surgeImg,
-    link: '',
-  },
-  {
-    title: 'CampWithUs',
-    description:
-      'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
-    tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
-    imageUrl: campwithusImg,
-    link: '',
-  },
-] as const;
+export const allProjects = {
+  'React.js': [
+    {
+      title: 'AI chatbots & Microapps',
+      description:
+        'Deliver a seamless, app-like experience with the convenience of a self-service conversation that drives adoption and delights customers',
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'XState',
+        'RxJS',
+        'React-Flow',
+        'GraphQL',
+        'Datadog',
+        'Cypress',
+        'i18n',
+      ],
+      imageUrl: pypestreamImg,
+      link: '',
+    },
+    {
+      title: 'Patient Engagement Software',
+      description: `A Healthcare platform that enables a Total Care Experience for connected and compassionate care across the full patient journey`,
+      tags: [
+        'React',
+        'Redux',
+        'TypeScript',
+        'Formik',
+        'Jest',
+        'Cypress',
+        'Mirth Connect',
+        'HL7 Standards',
+        'AWS',
+      ],
+      imageUrl: spinsciImg,
+      link: '',
+    },
+    {
+      title: 'Audit Master',
+      description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'Tailwind',
+        'OpenAI',
+        'SCRUM Methodology',
+        'End-to-End Development',
+      ],
+      imageUrl: auditMasterImg,
+      link: '',
+    },
+    {
+      title: 'Surge',
+      description:
+        'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'MySQL',
+        'Clerk',
+        'Stripe Connect',
+        'Shadcn',
+        'Tailwind',
+      ],
+      imageUrl: surgeImg,
+      link: '',
+    },
+  ],
+  'Node.js': [
+    {
+      title: 'CampWithUs',
+      description:
+        'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
+      tags: ['Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
+      imageUrl: campwithusImg,
+      link: '',
+    },
+  ],
+  Python: [
+    {
+      title: 'AI chatbots & Microapps',
+      description:
+        'Deliver a seamless, app-like experience with the convenience of a self-service conversation that drives adoption and delights customers',
+      tags: [
+        'React',
+        'TypeScript',
+        'Next.js',
+        'XState',
+        'RxJS',
+        'React-Flow',
+        'GraphQL',
+        'Datadog',
+        'Cypress',
+        'i18n',
+      ],
+      imageUrl: pypestreamImg,
+      link: '',
+    },
+  ],
+};
 
 export const skillsData = {
   Languages: [
